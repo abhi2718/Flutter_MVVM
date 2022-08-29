@@ -21,6 +21,6 @@ class UnauthorisedException extends AppException {
   UnauthorisedException([String? message]):super(message:message,prefix:'Unauthorised request');
 }
 
-class InvalidException extends AppException {
-  InvalidException([String? message]):super(message:message,prefix:'Invalid exception');
+class InvalidInputException extends AppException {
+  InvalidInputException([String? message]):super(message:message,prefix:'Invalid inpput exception');
 }
