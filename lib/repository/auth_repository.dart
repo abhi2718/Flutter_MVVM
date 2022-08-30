@@ -23,4 +23,3 @@ class AuthRepository {
     }
   }
 }
-// https://reqres.in
