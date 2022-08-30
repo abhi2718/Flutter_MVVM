@@ -20,8 +20,14 @@ class Utils {
   }
 
   static snackBar(String message, BuildContext context) {
-    return ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text(message),
-      ));
+    return ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+      content: Text(message),
+    ));
+  }
+
+  static void fieldFocusChange(
+      BuildContext context, FocusNode current, FocusNode nextFocus) {
+    current.unfocus();
+    FocusScope.of(context).requestFocus(nextFocus);
   }
 }
